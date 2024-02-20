@@ -101,13 +101,6 @@ document.querySelector('#birthYear').value = SEU_ANO_DE_NASCIMENTO
 document.querySelector('.formButton').click()
 */
 
-
-
-
-
-
-
-
 // Bloco de código para realizar a páginação
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -122,4 +115,15 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log("Abriu a página 2")
         window.location.href = '../ex-02/index.html'; // Substitua pelo caminho correto da próxima página
     });
+});
+
+// Bloco defini o título do exercicio
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Obter o nome do arquivo da URL
+    const currentPage = window.location.pathname.split('/').pop();
+    // Remover a extensão do arquivo
+    const pageTitle = currentPage.split('.')[0];
+    // Atualizar o conteúdo do título e deixa maiusculo
+    document.getElementById('pageTitle').innerText = pageTitle.toUpperCase();
 });
