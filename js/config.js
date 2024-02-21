@@ -5,12 +5,12 @@ document.addEventListener("DOMContentLoaded", function() {
     const nextButton = document.getElementById('next');
 
     previousButton.addEventListener('click', function() {
-        window.location.href = 'caminho/para/a/pagina/anterior/index.html'; // Substitua pelo caminho correto da página anterior
+        window.location.href = '../ex-01/ex-01.html'; // Substitua pelo caminho correto da página anterior
     });
 
     nextButton.addEventListener('click', function() {
         console.log("Abriu a página 2")
-        window.location.href = '../ex-02/index.html'; // Substitua pelo caminho correto da próxima página
+        window.location.href = '../ex-02/ex-02.html'; // Substitua pelo caminho correto da próxima página
     });
 });
 
